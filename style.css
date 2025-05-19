@@ -143,3 +143,69 @@ nav ul li a:hover::after {
     text-decoration: none;
     color: black;
 }
+
+/* Menu Section */
+
+.menu-section {
+    width: 80%;
+    margin: 3em auto 0 auto;
+    padding: 40px 0;
+}
+
+.menu-section h2 {
+    color: #224B0C;
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.menu-card {
+    background: #EDE4E0;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(34,75,12,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em 1em;
+    transition: box-shadow 0.3s;
+}
+
+.menu-card:hover {
+    box-shadow: 0 8px 32px rgba(34,75,12,0.18);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+
+.menu-info h3 {
+    color: #224B0C;
+    font-size: 1.3em;
+    margin: 0.5em 0 0.2em 0;
+    font-weight: 700;
+}
+
+.menu-info p {
+    color: #3c3c3c;
+    font-size: 1em;
+    margin: 0 0 0.7em 0;
+}
+
+.harga {
+    color: #A0937D;
+    font-weight: bold;
+    font-size: 1.1em;
+}
