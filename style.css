@@ -1,0 +1,145 @@
+*, html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDE4E0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    background: var(--bg-200);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+nav .logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #224B0C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    position: relative; 
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #224B0C; 
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.reservasi {
+    background: #A0937D;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition:  0.3s;   
+    border-radius: 25px 30px 25px 0px;
+
+}
+.reservasi:hover {
+    border-radius: 35px;
+    background: #A0937D;
+    box-shadow: 0 4px 24px rgba(34,75,12,0.12);
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 15em auto 0 auto ; 
+    padding: 40px 0;
+    min-height: 350px;
+}
+
+.hero-text span {
+    font-size: 2em;
+    color: #224B0C;
+    font-weight: 900;
+}
+.hero-text h1 {
+    font-size: 1.7em;
+    color: #224B0C;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.hero-image img {
+    position: relative;
+    width: 120%;           
+    max-width: none;       
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(34,75,12,0.12);
+    margin-left: 12.5em;
+}
+
+.hero button {
+    background: #3c9b09;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+    border: solid 2px black;
+}
+
+.hero button:hover {
+    background: #224B0C;
+    color: white;
+    border: solid 2px #224B0C;
+    box-shadow: 0 4px 24px rgba(34,75,12,0.12);
+}
+
+.hero button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
