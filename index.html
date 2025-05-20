@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     
@@ -14,16 +15,16 @@
             <div class="logo">CIFOS</div>
             <ul>
                 <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang">Tentang</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#reservasi" class="reservasi">Reservasi</a></li>
             </ul>
         </nav>
     </header>
 
-
+    
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" id="beranda">
+      <div class="hero-container"></div>
     <div class="hero-text">
             <h1><span>CIFOS</span><br>Ciawi Food Station</h1>
             <p>Cita Rasa Nusantara, Rasakan Indahnya Pemandangan Dengan Makanan  <br> Yang Lezat. </p>
@@ -96,7 +97,83 @@
         <span class="harga">Rp 70.820</span>
       </div>
     </div> 
-  </div>
-</section>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="reservasi">
+      <div class="contact-info">
+          <h2>Hubungi Kami</h2>
+          <p>Untuk reservasi atau pertanyaan lebih lanjut, silakan hubungi kami melalui:</p>
+          <div class="contact-details">
+              <div class="detail">
+                  <i class="fas fa-envelope"></i>
+                  <p>Email: Cifos_@gmail.com</p>
+              </div>
+              <div class="detail">
+                  <i class="fas fa-phone"></i>
+                  <p>Telepon: +62 1234 4321</p>
+              </div>
+          </div>
+      </div>
+
+      <form class="contact-form">
+          <div class="form-group">
+              <label for="nama">Nama Lengkap*</label>
+              <input type="text" id="nama" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="telepon">Nomor Telepon*</label>
+              <input type="tel" id="telepon" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="email">Alamat Email*</label>
+              <input type="email" id="email" required>
+          </div>
+          
+          <div class="form-group">
+              <label for="perusahaan">Alamat Perusahaan (Opsional)</label>
+              <input type="text" id="perusahaan">
+          </div>
+          
+          <div class="form-group">
+              <label for="pesan">Pesan*</label>
+              <textarea id="pesan" rows="5" required></textarea>
+          </div>
+
+          <button type="submit">Kirim Pesan</button>
+      </form>
+  </section>
+
+<footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>CIFOS</h3>
+                <p>Ciawi Food Station</p>
+                <p>Jl. Raya Ciawi No.123, Bogor</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservasi">Reservasi</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Ikuti Kami</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/cifos_ciawi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tr.ee/9Fq5sZrGcU" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CIFOS. All rights reserved.</p>
+        </div>
+  </footer>
+
+
 </body>
 </html>
